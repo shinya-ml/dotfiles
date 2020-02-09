@@ -1,5 +1,7 @@
 #!/bin/sh
 # ubuntu setup時に必要なものをinstall
+sudo apt update
+sudo apt upgrade
 
 # curl
 sudo apt install curl
@@ -24,5 +26,8 @@ sudo apt isntall vim
 wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
 sudo tar -xvf go1.13.3.linux-amd64.tar.gz
 sudo mv go /usr/local
+
+# python (pip)
+sudo apt install python3-pip
 
 chmod +x symboliklink.sh
