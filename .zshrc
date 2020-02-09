@@ -28,3 +28,4 @@ zinit ice pick"b4b4r07/enhancd" src"init.sh"
 # alias
 alias vi='vim'
 alias lg='lazygit'
+alias py='python3'
