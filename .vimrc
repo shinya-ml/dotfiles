@@ -53,6 +53,7 @@ colorscheme palenight
 noremap <s-h> ^
 noremap <s-l> $
 inoremap <C-j> <esc>
+tnoremap <Esc> <C-\><C-n>
 " quick run
 nnoremap <Space>q :QuickRun<CR>
 " vim-go
