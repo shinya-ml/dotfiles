@@ -6,8 +6,6 @@ sudo apt install curl
 
 # git
 sudo apt install git
-git config --global user.name="shinya-ml"
-git config --global user.email="epsonia_ss08@icloud.com"
 
 # zsh
 sudo apt intall zsh
