@@ -61,4 +61,3 @@ nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
 " vaffle
 nnoremap <Space>v :Vaffle<CR>
-
