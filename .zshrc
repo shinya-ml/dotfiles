@@ -24,6 +24,7 @@ zinit light sindresorhus/pure
 zinit ice from"gh-r" as "program"
 zinit load junegunn/fzf-bin
 
+zinit ice pick"b4b4r07/enhancd" src"init.sh"
 # alias
 alias vi='vim'
 alias lg='lazygit'
