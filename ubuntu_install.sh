@@ -30,4 +30,9 @@ sudo mv go /usr/local
 # python (pip)
 sudo apt install python3-pip
 
+# javascript (react)
+sudo apt install nodejs
+sudo apt isntall npm
+sudo npm install -g create-react-app
+
 chmod +x symboliklink.sh
