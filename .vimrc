@@ -5,7 +5,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'Townk/vim-autoclose'
+Plug 'cohama/lexima.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
@@ -19,6 +19,8 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
 let g:airline_theme='deus'
+" lspのhover非表示
+let lsp_signature_help_enabled = 0
 
 set tabstop=4
 set expandtab
@@ -49,6 +51,7 @@ if has("persistent_undo")
 endif
 
 colorscheme palenight
+
 
 noremap <s-h> ^
 noremap <s-l> $
