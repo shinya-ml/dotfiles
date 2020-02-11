@@ -1,8 +1,3 @@
-
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/Projects
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
@@ -20,8 +15,9 @@ zinit light zdharma/fast-syntax-highlighting
 
 zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
+zinit light chrissicool/zsh-256color
 
-zinit ice from"gh-r" as "program"
+zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
 zinit ice pick"b4b4r07/enhancd" src"init.sh"
@@ -29,3 +25,14 @@ zinit ice pick"b4b4r07/enhancd" src"init.sh"
 alias vi='vim'
 alias lg='lazygit'
 alias py='python3'
+set -o vi
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Projects
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+### prompt colors
+
+### ls colors
+export LSCOLORS=gxfxcxdxbxegedabagacad
+

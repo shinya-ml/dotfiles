@@ -10,7 +10,7 @@ sudo apt install curl
 sudo apt install git
 
 # zsh
-sudo apt intall zsh
+sudo apt install zsh
 chsh -s $(which zsh)
 
 # zinit (zsh plugin manager)
@@ -32,7 +32,7 @@ sudo apt install python3-pip
 
 # javascript (react)
 sudo apt install nodejs
-sudo apt isntall npm
+sudo apt install npm
 sudo npm install -g create-react-app
 
 chmod +x symboliklink.sh
