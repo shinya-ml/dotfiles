@@ -22,6 +22,10 @@ sudo apt install tmux
 #vim 
 sudo apt isntall vim
 
+#lazygit
+sudo add-apt-repository ppa:lazygit-team/release
+sudo apt-get lazygit
+
 # golang (ver 1.13)
 wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
 sudo tar -xvf go1.13.3.linux-amd64.tar.gz
