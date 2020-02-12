@@ -20,7 +20,6 @@ zinit light chrissicool/zsh-256color
 zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
-zinit ice pick"b4b4r07/enhancd" src"init.sh"
 # alias
 alias vi='vim'
 alias lg='lazygit'
@@ -31,8 +30,5 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/Projects
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-### prompt colors
 
-### ls colors
-export LSCOLORS=gxfxcxdxbxegedabagacad
 

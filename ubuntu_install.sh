@@ -22,6 +22,10 @@ sudo apt install tmux
 #vim 
 sudo apt isntall vim
 
+#vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 #lazygit
 sudo add-apt-repository ppa:lazygit-team/release
 sudo apt-get lazygit
