@@ -13,8 +13,6 @@ sudo apt install git
 sudo apt install zsh
 chsh -s $(which zsh)
 
-# zinit (zsh plugin manager)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 # tmux 
 sudo apt install tmux

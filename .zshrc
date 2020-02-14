@@ -21,6 +21,7 @@ zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
 # alias
+alias ls='ls -G'
 alias vi='vim'
 alias lg='lazygit'
 alias py='python3'
