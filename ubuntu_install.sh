@@ -34,7 +34,11 @@ sudo tar -xvf go1.13.3.linux-amd64.tar.gz
 sudo mv go /usr/local
 
 # python (pip)
-sudo apt install python3-pip
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+#TODO:必要なmoduleのinstal
 
 # javascript (react)
 sudo apt install nodejs

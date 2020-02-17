@@ -27,6 +27,8 @@ let g:airline_theme='deus'
 let lsp_signature_help_enabled = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 
+set noswapfile
+
 set tabstop=4
 set expandtab
 set softtabstop=0
@@ -49,6 +51,7 @@ highlight specialkey ctermfg=darkgray
 
 set autoindent
 set smartindent
+set clipboard+=unnamed
 
 if has("persistent_undo")
     set undodir=~/.undodir
