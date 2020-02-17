@@ -22,7 +22,6 @@ brew install lazygit
 
 #python (pyenvでバージョン管理)
 brew install pyenv
-echo 'eval "$(pyenv init -)"' >> ./.zshrc
 
 # miniconda install
 pyenv install miniconda3-latest
