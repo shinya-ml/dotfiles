@@ -33,11 +33,6 @@ wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
 sudo tar -xvf go1.13.3.linux-amd64.tar.gz
 sudo mv go /usr/local
 
-# python (pip)
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-#TODO:必要なmoduleのinstal
 
 # javascript (react)
 sudo apt install nodejs
