@@ -13,14 +13,16 @@ sudo apt install git
 sudo apt install zsh
 chsh -s $(which zsh)
 
-# zinit (zsh plugin manager)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 # tmux 
 sudo apt install tmux
 
 #vim 
 sudo apt isntall vim
+
+#vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #lazygit
 sudo add-apt-repository ppa:lazygit-team/release
@@ -31,8 +33,6 @@ wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
 sudo tar -xvf go1.13.3.linux-amd64.tar.gz
 sudo mv go /usr/local
 
-# python (pip)
-sudo apt install python3-pip
 
 # javascript (react)
 sudo apt install nodejs

@@ -1,0 +1,62 @@
+% \documentclass[a4paper]{jarticle} % 一般的なスタイルの書き方
+\documentclass[a4paper,twocolumn]{jarticle} % 2段構成のスタイル
+%\documentclass[a4paper]{jreport} %卒論原稿はこのスタイル
+\setlength{\topmargin}{-2.04cm}%例:上余白を設定
+\setlength{\oddsidemargin}{-1.04cm}%例:左余白を1.5cmにする
+\setlength{\evensidemargin}{-1.04cm}%例b:左余白を1.5cmにする
+\setlength{\textwidth}{18cm}%例:一行の幅を18cmにする
+\setlength{\textheight}{25cm}%例:一ページの文章の縦の長さを25cmにする
+%\setlength{\textwidth}{45em}%例:一行の文字数を45文字にする(未使用)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% usepaclagae 群
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
+\usepackage{amsfonts}
+\usepackage{ascmac} %枠付き文章を表記するのに必
+\usepackage{amssymb}
+\usepackage{subfig}
+\usepackage{comment}
+% \mathbb{R}^{l} %表記例
+% \usepackage{algorithm}
+% \usepackage{algorithmicx}
+% \usepackage{algpseudocode}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入す
+\pagestyle{empty}%ページ番号を表示しない
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+\newcommand{\mbf}[1]{\mbox{\boldmath $#1$}}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\makeatletter
+\def\@maketitle{%
+\begin{center}%
+{\LARGE \@title \par}% タイトル
+\end{center}%
+\begin{flushright}%
+{\large \@date}% 日付
+\end{flushright}%
+\begin{flushright}%%
+{\large \@author}% 著者
+\end{flushright}%
+\par\vskip 1.5em
+}
+\makeatother
+\title{} %ここにタイトルを記入すること.
+\date{}
+\author{鈴木 進也}
+
+
+
+\begin{document}
+
+\maketitle
+
+\bibliography{bibliography}
+\bibliographystyle{junsrt}
+\end{document}

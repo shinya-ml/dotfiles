@@ -1,0 +1,96 @@
+\documentclass[dvipdfmx, 10.5pt]{beamer}
+    %%%% 和文用 %%%%%
+    \usepackage{bxdpx-beamer}
+    \usepackage{pxjahyper}
+    \usepackage{minijs}%和文用
+    \renewcommand{\kanjifamilydefault}{\gtdefault}%和文用
+    \renewcommand\thefootnote{\arabic{footnote}}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% usepackage 群
+    %%%%%%%%%%%%%%%%%%%%%%%%%%
+    \usepackage{amsmath,bm} %多次元空間ベクトルRを表記するのに必要
+    \usepackage{amsfonts}
+    \usepackage{ascmac,color} %枠付き文章を表記するのに必
+    \usepackage{amssymb}
+    \usepackage{tcolorbox}
+    \usepackage{multicol}
+    \usepackage{wasysym}
+    
+    % \mathbb{R}^{l} %表記例
+    % \usepackage{algorithm}
+    % \usepackage{algorithmicx}
+    % \usepackage{algpseudocode}
+    
+    %%%% スライドの見た目 %%%%%
+    \usetheme{default}
+    \usefonttheme{professionalfonts}
+    
+    % \useoutertheme[subsection=false]{tree}%ヘッダーにセクション表示
+    \usecolortheme{seahorse}
+    \useinnertheme{circles} % 箇条書きをシンプルに
+    
+    %\setbeamercovered{transparent}%消えている文字をうっすらと表示
+    \setbeamertemplate{footline}[frame number]%フッターをページ番号だけに
+    \setbeamerfont{footline}{size=\scriptsize}%ページ番号小さく
+    \setbeamerfont{frametitle}{size=\large}%フレームタイトルちょい小さく
+    \setbeamercolor{footline}{bg=black }%ページ番号を太く
+    \setbeamersize{text margin left=.75zw, text margin right=.75zw}%スライドの横の空白を調節
+    \setbeamertemplate{blocks}[rounded] % Blockの影を消す
+    \setbeamertemplate{enumerate items}[default]%enumerate環境のitemを見やすくする
+    \setbeamertemplate{section in toc}[square]%outlineのボールを四角に
+    \setbeamertemplate{navigation symbols}{}%右下のアイコンを消す
+    \setbeamertemplate{navigation symbols}{} % ナビゲーションバー非表示
+    %%%%
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%いろいろ便利なもの
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \usepackage{here} %[hbtp]の代わりに[H]と書きこむと強制的にその場所に図や表を挿入する
+    \usepackage{bm}
+    \usepackage{ulem}
+    \usepackage{mathtools}
+    %\usepackage{caption}
+    %\captionsetup[figure]{font = footnotesize}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%newcommand群
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+    \newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+    \newcommand{\mbf}[1]{\mbox{\boldmath $#1$}}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%本文
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \title[]{}
+    % \subtitle{}
+    \author[]{}
+    \date[]{\today}
+    \institute[]{}
+    % [..]に省略名が書ける
+
+    %目次スライド
+    \AtBeginSection[]{
+        \begin{frame}{}
+        \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
+        \tableofcontents[currentsection, hideallsubsections]%目次本体
+        % \tableofcontents[hideallsubsections]
+        %\thispagestyle{empty}%ヘッダーフッター表示なし
+        \end{frame}
+    }
+    % \usepackage[labelformat=empty,labelsep=none]{caption}
+    
+    
+    \begin{document}
+    %タイトル
+    \begin{frame}{}
+    \maketitle%タイトル本体
+    %\thispagestyle{empty}%ヘッダーフッター表示なし
+    %\addtocounter{framenumber}{-1}%ページ数カウンタ	しない
+    \end{frame}
+    %目次
+    \begin{frame}{Outline}
+        \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
+        \setcounter{tocdepth}{1}
+        \tableofcontents[hideallsubsections]
+        %\thispagestyle{empty}%ヘッダーフッター表示なし
+    \end{frame}
+    \end{document}
