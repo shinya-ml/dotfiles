@@ -20,14 +20,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #lazygit
 brew install lazygit
 
-#python (pyenvでバージョン管理)
-brew install pyenv
-
-# miniconda install
-pyenv install miniconda3-latest
-pyenv global miniconda3-latest
-#TODO: 必要なmoduleのinstall
-
 #javascript
 brew install nodejs
 brew install npm

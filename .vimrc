@@ -1,3 +1,4 @@
+
 call plug#begin()
 Plug 'fatih/vim-go'
 Plug 'cocopon/vaffle.vim'
