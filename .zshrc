@@ -26,6 +26,7 @@ alias ls='ls -G'
 alias vi='vim'
 alias lg='lazygit'
 alias py='python3'
+alias skim='open -ga /Applications/Skim.app'
 set -o vi
 
 export GOROOT=/usr/local/go

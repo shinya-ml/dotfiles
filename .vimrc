@@ -19,6 +19,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'ryanolsonx/vim-lsp-python', {'for' : 'python'}
 call plug#end()
 let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/dotfiles/UltiSnips']
 let g:tex_flavor="latex"
@@ -48,7 +49,7 @@ set laststatus=2
 
 set list
 set listchars=tab:>-,extends:<,precedes:<
-highlight specialkey ctermfg=darkgray
+highlight SpecialKey ctermfg=darkmagenta
 
 set autoindent
 set smartindent
@@ -66,6 +67,7 @@ noremap <s-h> ^
 noremap <s-l> $
 inoremap <C-j> <esc>
 tnoremap <Esc> <C-\><C-n>
+nnoremap <Space>t :vert term<CR>
 " quick run
 nnoremap <Space>q :QuickRun<CR>
 " vim-go
