@@ -36,3 +36,4 @@ export PATH=/usr/local/texlive/2019/bin/x86_64-darwin:$PATH
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :150 {}"'
