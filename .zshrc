@@ -1,9 +1,4 @@
-export PYENV_ROOT=/usr/local/var/pyenv
 
-# pyenvさんに自動補完機能を提供してもらう
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
@@ -36,4 +31,5 @@ set -o vi
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Projects
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=/usr/local/texlive/2019/bin/x86_64-darwin:$PATH
 
