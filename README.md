@@ -20,7 +20,10 @@
     app store
 - libreoffice
     https://ja.libreoffice.org/download/download/?type=mac-x86_64&version=6.2.8&lang=ja
+- skim
+    https://skim-app.sourceforge.io/
 
 ### TODO
 - pip install されているパッケージ一覧
-    
+- latexmkの整備 
+

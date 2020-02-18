@@ -11,8 +11,8 @@ Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 " auto complication (lsp)
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -20,7 +20,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
-
+let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/dotfiles/UltiSnips']
 let g:tex_flavor="latex"
 
 let g:airline_theme='deus'
@@ -73,14 +73,12 @@ nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
 " vaffle
 nnoremap <Space>v :Vaffle<CR>
-" Plugin key-mappings.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-" template tex
-autocmd! BufNewFile *slide.tex 0r $HOME/template/slide_tex.txt
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>""
+autocmd! BufNewFile *slide.tex 0r $HOME/dotfiles/template/slide_tex.txt
 
-autocmd! BufNewFile *paper.tex 0r $HOME/template/paper_tex.txt
+autocmd! BufNewFile *paper.tex 0r $HOME/dotfiles/template/paper_tex.txt
 
-autocmd! BufNewFile *diary.md 0r $HOME/template/diary_md.txt
+autocmd! BufNewFile *diary.md 0r $HOME/dotfiles/template/diary_md.txt
