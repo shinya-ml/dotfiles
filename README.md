@@ -11,6 +11,8 @@
 - vim-plug
 - lazygit
     - gitのTUIツール
+- fzf
+- bat
 - hyper
     - electron製ターミナル
 - javascript (nodejs, npm, create-react-app)
@@ -33,5 +35,4 @@
 
 ### TODO
 - pip install されているパッケージ一覧
-- latexmkの整備 
 
