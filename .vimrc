@@ -53,7 +53,7 @@ highlight specialkey ctermfg=darkgray
 set autoindent
 set smartindent
 set clipboard+=unnamed
-
+set backspace=indent,eol,start
 if has("persistent_undo")
     set undodir=~/.undodir
     set undofile
