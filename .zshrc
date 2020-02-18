@@ -34,3 +34,5 @@ export GOPATH=$HOME/Projects
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export PATH=/usr/local/texlive/2019/bin/x86_64-darwin:$PATH
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

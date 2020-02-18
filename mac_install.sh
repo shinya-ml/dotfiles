@@ -20,6 +20,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #lazygit
 brew install lazygit
 
+#fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+.fzf/install
+
 #javascript
 brew install nodejs
 brew install npm
