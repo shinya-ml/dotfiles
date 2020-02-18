@@ -4,11 +4,15 @@
 
 ### mac_install.shでインストールするもの
 - homebrew
+    - パッケージマネージャー
 - zsh
+    - zinitは`source .zshrc`で勝手に入る
 - vim
 - vim-plug
 - lazygit
+    - gitのTUIツール
 - hyper
+    - electron製ターミナル
 - javascript (nodejs, npm, create-react-app)
 - golang (ver1.13.3)
 - mactex
