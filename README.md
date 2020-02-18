@@ -23,6 +23,10 @@
 - skim
     https://skim-app.sourceforge.io/
 
+### pythonの環境に関して
+- 基本的にpip3 install hogeで必要なパッケージはいれる
+- バージョン管理は現状する必要がないのでenv系は入れない
+
 ### TODO
 - pip install されているパッケージ一覧
 - latexmkの整備 
