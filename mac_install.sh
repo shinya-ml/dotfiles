@@ -24,6 +24,9 @@ brew install lazygit
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 .fzf/install
 
+#bat
+brew install bat
+
 #javascript
 brew install nodejs
 brew install npm
