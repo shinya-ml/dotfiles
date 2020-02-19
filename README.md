@@ -28,6 +28,8 @@
     https://ja.libreoffice.org/download/download/?type=mac-x86_64&version=6.2.8&lang=ja
 - skim (pdf viewer)
     https://skim-app.sourceforge.io/
+- cyberduck (ftp client)
+    https://cyberduck.io/
 
 ### pythonの環境に関して
 - 基本的にpip3 install hogeで必要なパッケージはいれる
