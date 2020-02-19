@@ -26,7 +26,7 @@
     app store
 - libreoffice
     https://ja.libreoffice.org/download/download/?type=mac-x86_64&version=6.2.8&lang=ja
-- skim
+- skim (pdf viewer)
     https://skim-app.sourceforge.io/
 
 ### pythonの環境に関して
