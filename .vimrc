@@ -26,22 +26,9 @@ call plug#end()
 let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/dotfiles/UltiSnips']
 let g:tex_flavor="latex"
 " LaTeX Quickrun
-let g:vimtex_compiler_latexmk = {
-      \ 'background': 1,
-      \ 'build_dir': '',
-      \ 'continuous': 1,
-      \ 'options': [
-      \    '-pdfdvi',
-      \    '-verbose',
-      \    '-file-line-error',
-      \    '-synctex=1',
-      \    '-interaction=nonstopmode',
-      \],
-      \}
-
-let g:vimtex_view_general_viewer
-      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
-let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:tex_conceal=''
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '@line @pdf @tex'
 
 let g:airline_theme='deus'
 " lspのhover非表示
@@ -81,7 +68,7 @@ endif
 
 colorscheme palenight
 
-let mapleader=" "
+let maplocalleader="\<Space>"
 
 noremap <s-h> ^
 noremap <s-l> $
