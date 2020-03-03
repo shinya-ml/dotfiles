@@ -28,7 +28,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 brew install bat
 
 #exa
-brew exa
+brew install exa
 
 #javascript
 brew install nodejs
