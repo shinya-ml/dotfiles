@@ -13,6 +13,7 @@
     - gitのTUIツール
 - fzf
 - bat
+- exa
 - hyper
     - electron製ターミナル
 - javascript (nodejs, npm, create-react-app)

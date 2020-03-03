@@ -27,6 +27,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 #bat
 brew install bat
 
+#exa
+brew exa
+
 #javascript
 brew install nodejs
 brew install npm
