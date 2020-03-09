@@ -1,5 +1,5 @@
-% \documentclass[a4paper]{jarticle} % 一般的なスタイルの書き方
-\documentclass[a4paper,twocolumn]{jarticle} % 2段構成のスタイル
+\documentclass[a4paper]{jarticle} % 一般的なスタイルの書き方
+%\documentclass[a4paper,twocolumn]{jarticle} % 2段構成のスタイル
 %\documentclass[a4paper]{jreport} %卒論原稿はこのスタイル
 \setlength{\topmargin}{-2.04cm}%例:上余白を設定
 \setlength{\oddsidemargin}{-1.04cm}%例:左余白を1.5cmにする

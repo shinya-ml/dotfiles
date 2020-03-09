@@ -68,14 +68,14 @@
     % [..]に省略名が書ける
 
     %目次スライド
-    \AtBeginSection[]{
-        \begin{frame}{}
-        \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
-        \tableofcontents[currentsection, hideallsubsections]%目次本体
-        % \tableofcontents[hideallsubsections]
-        %\thispagestyle{empty}%ヘッダーフッター表示なし
-        \end{frame}
-    }
+    %\AtBeginSection[]{
+    %    \begin{frame}{}
+    %    \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
+    %    \tableofcontents[currentsection, hideallsubsections]%目次本体
+    %    % \tableofcontents[hideallsubsections]
+    %    %\thispagestyle{empty}%ヘッダーフッター表示なし
+    %    \end{frame}
+    %}
     % \usepackage[labelformat=empty,labelsep=none]{caption}
     
     
@@ -87,10 +87,10 @@
     %\addtocounter{framenumber}{-1}%ページ数カウンタ	しない
     \end{frame}
     %目次
-    \begin{frame}{Outline}
-        \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
-        \setcounter{tocdepth}{1}
-        \tableofcontents[hideallsubsections]
-        %\thispagestyle{empty}%ヘッダーフッター表示なし
-    \end{frame}
+    %\begin{frame}{Outline}
+    %    \addtocounter{framenumber}{-1}%ページ数カウンタ	しない
+    %    \setcounter{tocdepth}{1}
+    %    \tableofcontents[hideallsubsections]
+    %    %\thispagestyle{empty}%ヘッダーフッター表示なし
+    %\end{frame}
     \end{document}
