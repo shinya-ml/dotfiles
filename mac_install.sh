@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # xcodeをapp storeからインストールしておく
-xcode-select --install
+#xcode-select --install
 #homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -38,3 +38,6 @@ npm install -g create-react-app
 #golang 1.13.3
 curl -o golang.pkg https://dl.google.com/go/go1.13.3.darwin-amd64.pkg
 sudo open golang.pkg
+
+#mactex
+brew cask install mactex-no-gui
