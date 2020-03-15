@@ -15,6 +15,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'thinca/vim-quickrun'
 Plug 'lervag/vimtex'
+Plug 'mattn/emmet-vim'
 " auto complication (lsp)
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -37,6 +38,8 @@ let g:UltiSnipsExpandTrigger="<tab>"
 
 set noswapfile
 
+filetype plugin indent on
+
 set tabstop=4
 set expandtab
 set softtabstop=0
@@ -54,7 +57,7 @@ set clipboard=unnamed
 set laststatus=2
 
 set list
-set listchars=tab:>-,extends:<,precedes:<
+set listchars=tab:>-,trail:-,extends:<,precedes:<
 highlight SpecialKey ctermfg=darkmagenta
 
 set autoindent
@@ -92,3 +95,8 @@ autocmd! BufNewFile *slide.tex 0r $HOME/dotfiles/template/slide_tex.txt
 autocmd! BufNewFile *paper.tex 0r $HOME/dotfiles/template/paper_tex.txt
 
 autocmd! BufNewFile *diary.md 0r $HOME/dotfiles/template/diary_md.txt
+
+" lang
+autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType vue setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType javascript setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
