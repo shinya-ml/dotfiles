@@ -18,6 +18,7 @@ Plug 'honza/vim-snippets'
 Plug 'thinca/vim-quickrun'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
+Plug 'markonm/traces.vim'
 " auto complication (lsp)
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'

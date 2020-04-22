@@ -41,3 +41,46 @@ sudo open golang.pkg
 
 #mactex
 brew cask install mactex-no-gui
+
+#chrome
+brew cask install google-chrome
+
+#slack
+brew cask install slack
+
+#skim
+brew cask install skim
+
+#libreoffice
+brew cask install libreoffice-language-pack --language=ja
+
+#cyber duck
+brew cask install cyberduck
+
+#alfred
+brew cask install alfred
+
+# vs-code
+brew cask install visual-studio-code
+
+# google-drive
+brew cask install google-backup-and-sync
+
+# hyper-switch (ウィンドウ単位の切り替え)
+brew cask install hyperswitch
+
+# spectacle
+brew cask install spectacle
+
+# shiftlt
+brew cask install shiftlt
+
+# dropbox
+brew cask install dropbox
+
+# scroll-reverser
+brew cask install scroll-reverser
+
+# docker (docker-compose)
+brew cask install docker
+
