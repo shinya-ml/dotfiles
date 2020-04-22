@@ -1,10 +1,12 @@
 
 call plug#begin()
+" color theme
+Plug 'nanotech/jellybeans.vim'
+" others
 Plug 'fatih/vim-go'
 Plug 'cocopon/vaffle.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
-Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'cohama/lexima.vim'
 Plug 'thinca/vim-quickrun'
@@ -69,7 +71,7 @@ if has("persistent_undo")
     set undofile
 endif
 
-colorscheme palenight
+colorscheme jellybeans
 
 let maplocalleader="\<Space>"
 
