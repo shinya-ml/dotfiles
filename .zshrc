@@ -25,6 +25,7 @@ zinit load junegunn/fzf-bin
 alias ls='exa -Tla --level=1'
 alias vi='vim'
 alias lg='lazygit'
+alias g='git branch; git status'
 alias py='python3'
 alias skim='open -ga /Applications/Skim.app'
 set -o vi
