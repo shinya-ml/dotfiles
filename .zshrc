@@ -28,6 +28,7 @@ alias lg='lazygit'
 alias g='git branch; git status'
 alias py='python3'
 alias skim='open -ga /Applications/Skim.app'
+alias c='bat'
 set -o vi
 
 export GOROOT=/usr/local/go
