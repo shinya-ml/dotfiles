@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'nanotech/jellybeans.vim'
 " others
 Plug 'fatih/vim-go'
-Plug 'cocopon/vaffle.vim'
+Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
@@ -88,7 +88,7 @@ nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
 nnoremap gd :sp GoDef<CR>
 " vaffle
-nnoremap <Space>v :Vaffle<CR>
+nnoremap <Space>v :NERDTreeToggle<CR>
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
