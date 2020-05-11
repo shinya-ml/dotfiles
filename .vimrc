@@ -84,6 +84,7 @@ nnoremap <Space>t :vert term<CR>
 " quick run
 nnoremap <Space>q :QuickRun<CR>
 " vim-go
+let g:go_template_autocreate=0
 nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
 nnoremap gd :sp GoDef<CR>
