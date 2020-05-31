@@ -1,13 +1,15 @@
 #!/bin/sh
 # pip3 install numpy
-pip3 install scikit-learn
-pip3 install matplotlib
-pip3 install scipy
-pip3 install GPy
-pip3 install sobol_seq
-pip3 install joblib
-pip3 install pandas
-pip3 install platypus_opt
-pip3 install scipydirect
+pip3 install --user scikit-learn
+pip3 install --user matplotlib
+pip3 install --user scipy
+pip3 install --user GPy
+pip3 install --user sobol_seq
+pip3 install --user joblib
+pip3 install --user pandas
+pip3 install --user platypus_opt
+pip3 install --user scipydirect
+pip3 install --user nptyping
+
 
 
