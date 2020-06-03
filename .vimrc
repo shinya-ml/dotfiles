@@ -5,7 +5,6 @@ Plug 'nanotech/jellybeans.vim'
 " others
 Plug 'fatih/vim-go'
 Plug 'cocopon/Vaffle.vim'
-Plug 'lambdalisue/fern.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
@@ -40,8 +39,6 @@ let g:airline_theme='deus'
 let lsp_signature_help_enabled = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 
-"fern.vim (隠しファイルも表示)
-let g:fern#default_hidden = 1
 
 set noswapfile
 
@@ -92,8 +89,7 @@ let g:go_template_autocreate=0
 nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
 nnoremap gd :sp GoDef<CR>
-" fern.vim
-nnoremap <Space>v :Fern . -drawer<CR>
+nnoremap <Space>v :Vaffle<CR>
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
