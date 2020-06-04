@@ -30,6 +30,10 @@ brew install bat
 #exa
 brew install exa
 
+#pyenv
+brew install pyenv
+
+
 #javascript
 brew install nodejs
 brew install npm
@@ -84,3 +88,5 @@ brew cask install scroll-reverser
 # docker (docker-compose)
 brew cask install docker
 
+# /zshrcのリロード
+source .zshrc

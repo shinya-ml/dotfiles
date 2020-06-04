@@ -1,15 +1,19 @@
 #!/bin/sh
-# pip3 install numpy
-pip3 install --user scikit-learn
-pip3 install --user matplotlib
-pip3 install --user scipy
-pip3 install --user GPy
-pip3 install --user sobol_seq
-pip3 install --user joblib
-pip3 install --user pandas
-pip3 install --user platypus_opt
-pip3 install --user scipydirect
-pip3 install --user nptyping
+pyenv install 3.7.3
+pyenv rehash
+pyenv global 3.7.3
+
+pip install numpy
+pip install scikit-learn
+pip install matplotlib
+pip install scipy
+pip install GPy
+pip install sobol_seq
+pip install joblib
+pip install pandas
+pip install platypus_opt
+pip install scipydirect
+pip install nptyping
 
 
 
