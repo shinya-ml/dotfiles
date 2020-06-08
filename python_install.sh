@@ -14,6 +14,7 @@ pip install pandas
 pip install platypus_opt
 pip install scipydirect
 pip install nptyping
+pip install xlrd
 
 
 
