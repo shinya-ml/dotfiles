@@ -43,8 +43,6 @@ npm install -g create-react-app
 curl -o golang.pkg https://dl.google.com/go/go1.13.3.darwin-amd64.pkg
 sudo open golang.pkg
 
-#mactex
-brew cask install mactex-no-gui
 
 #chrome
 brew cask install google-chrome
@@ -88,5 +86,12 @@ brew cask install scroll-reverser
 # docker (docker-compose)
 brew cask install docker
 
+# microsoft teams
+brew cask install microsoft-teams
+
+#mactex (重いので一番最後)
+brew cask install mactex-no-gui
+
 # /zshrcのリロード
 source .zshrc
+
