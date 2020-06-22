@@ -15,6 +15,7 @@
     \usepackage{tcolorbox}
     \usepackage{multicol}
     \usepackage{wasysym}
+    \usepackage{natbib}
     
     % \mathbb{R}^{l} %表記例
     % \usepackage{algorithm}
