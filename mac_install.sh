@@ -35,13 +35,13 @@ brew install pyenv
 
 
 #javascript
-brew install nodejs
-brew install npm
-npm install -g create-react-app
+#brew install nodejs
+#brew install npm
+#npm install -g create-react-app
 
 #golang 1.13.3
-curl -o golang.pkg https://dl.google.com/go/go1.13.3.darwin-amd64.pkg
-sudo open golang.pkg
+#curl -o golang.pkg https://dl.google.com/go/go1.13.3.darwin-amd64.pkg
+#sudo open golang.pkg
 
 
 #chrome
