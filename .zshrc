@@ -29,6 +29,7 @@ alias g='git branch; git status'
 alias py='python3'
 alias skim='open -ga /Applications/Skim.app'
 alias c='bat'
+alias newslide='cp ~/dotfiles/template/slide_tex.txt slide.tex && touch ./ref.bib'
 set -o vi
 
 export GOROOT=/usr/local/go
