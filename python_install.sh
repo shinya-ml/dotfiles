@@ -1,7 +1,7 @@
 #!/bin/sh
-pyenv install 3.7.3
-pyenv rehash
-pyenv global 3.7.3
+# pyenv install 3.7.3
+# pyenv rehash
+# pyenv global 3.7.3
 
 pip install numpy
 pip install scikit-learn

@@ -16,6 +16,7 @@
     \usepackage{multicol}
     \usepackage{wasysym}
     \usepackage{natbib}
+    \usepackage{subfig}
     
     % \mathbb{R}^{l} %表記例
     % \usepackage{algorithm}

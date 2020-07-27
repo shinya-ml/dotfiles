@@ -32,6 +32,8 @@ alias skim='open -ga /Applications/Skim.app'
 alias c='bat'
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 alias r='ranger'
+alias newslide='cp ~/dotfiles/template/slide_tex.txt slide.tex && touch ./ref.bib'
+alias newpaper='cp ~/dotfiles/template/paper_tex.txt paper.tex && touch ./ref.bib'
 set -o vi
 
 export GOROOT=/usr/local/go
