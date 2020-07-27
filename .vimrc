@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'nanotech/jellybeans.vim'
 " others
 Plug 'fatih/vim-go'
-Plug 'cocopon/Vaffle.vim'
+Plug 'iberianpig/ranger-explorer.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
@@ -84,12 +84,11 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
 " quick run
 nnoremap <Space>q :QuickRun<CR>
-" vim-go
+" Ranger
 let g:go_template_autocreate=0
+nnoremap <Space>v :RangerOpenCurrentDir<CR>
 nnoremap <Space>i :GoImports<CR>
 nnoremap <Space>e :GoIfErr<CR>
-nnoremap gd :sp GoDef<CR>
-nnoremap <Space>v :Vaffle<CR>
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -104,3 +103,4 @@ autocmd! BufNewFile *diary.md 0r $HOME/dotfiles/template/diary_md.txt
 autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType vue setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType javascript setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+

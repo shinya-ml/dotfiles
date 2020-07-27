@@ -24,11 +24,14 @@ zinit load junegunn/fzf-bin
 # alias
 alias ls='exa -Tla --level=1'
 alias vi='vim'
+alias vim='vi'
 alias lg='lazygit'
 alias g='git branch; git status'
 alias py='python3'
 alias skim='open -ga /Applications/Skim.app'
 alias c='bat'
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+alias r='ranger'
 set -o vi
 
 export GOROOT=/usr/local/go
@@ -47,3 +50,11 @@ export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --lin
 export PYENV_ROOT=/usr/local/var/pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+function ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/local/bin/ranger $@
+    else
+        exit
+    fi
+}
