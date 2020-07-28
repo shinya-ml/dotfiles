@@ -62,6 +62,9 @@ brew cask install cyberduck
 #alfred
 brew cask install alfred
 
+# ranger (CLIのファイルマネージャ)
+brew install ranger
+
 # vs-code
 brew cask install visual-studio-code
 
@@ -85,6 +88,7 @@ brew cask install scroll-reverser
 
 # docker (docker-compose)
 brew cask install docker
+
 
 # microsoft teams
 brew cask install microsoft-teams
