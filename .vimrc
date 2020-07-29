@@ -46,6 +46,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 set noswapfile
 
 filetype plugin indent on
+if has("autocmd")
+    autocmd FileType js setlocal sw=2 sts=2 ts=2 et
+endif
 
 set tabstop=4
 set expandtab
