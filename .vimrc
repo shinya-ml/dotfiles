@@ -3,6 +3,9 @@ call plug#begin()
 " color theme
 Plug 'nanotech/jellybeans.vim'
 " others
+Plug 'junegunn/fzf', {'do': {-> fzf#install}}
+Plug 'junegunn/fzf.vim'
+Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
 Plug 'iberianpig/ranger-explorer.vim'
 Plug 'Yggdroot/indentLine'
@@ -82,6 +85,10 @@ noremap <s-l> $
 inoremap <C-j> <esc>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
+" fzf
+map <Space>b :Buffer<CR>
+" easymotion
+map <Leader>s <Plug>(easymotion-bd-f2)
 " quick run
 nnoremap <Space>q :QuickRun<CR>
 " Ranger
