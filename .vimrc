@@ -2,12 +2,13 @@
 call plug#begin()
 " color theme
 Plug 'nanotech/jellybeans.vim'
+" golang
+Plug 'mattn/vim-goimports'
 " others
 Plug 'junegunn/fzf', {'do': {-> fzf#install}}
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'fatih/vim-go'
-Plug 'iberianpig/ranger-explorer.vim'
+Plug 'cocopon/vaffle.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
@@ -90,15 +91,35 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
 " fzf
 map <Space>b :Buffer<CR>
+map <Space>f :FZF<CR>
 " easymotion
 map <Leader>s <Plug>(easymotion-bd-f2)
 " quick run
 nnoremap <Space>q :QuickRun<CR>
 " Ranger
-let g:go_template_autocreate=0
-nnoremap <Space>v :RangerOpenCurrentDir<CR>
-nnoremap <Space>i :GoImports<CR>
-nnoremap <Space>e :GoIfErr<CR>
+nnoremap <Space>v :Vaffle<CR>
+" lsp
+nmap <silent> gd :LspDefinition<CR>
+nmap <silent> gh :LspHover<CR>
+let g:lsp_diagnostics_echo_cursor = 1
+let g:asyncomplete_pupup_delay = 200
+let g:lsp_settings_filetype_go = ['gopls']
+
+let g:lsp_settings = {}
+let g:lsp_settings['gopls'] = {
+  \  'workspace_config': {
+  \    'usePlaceholders': v:true,
+  \    'analyses': {
+  \      'fillstruct': v:true,
+  \    },
+  \  },
+  \  'initialization_options': {
+  \    'usePlaceholders': v:true,
+  \    'analyses': {
+  \      'fillstruct': v:true,
+  \    },
+  \  },
+  \}
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
