@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'nanotech/jellybeans.vim'
 " golang
 Plug 'mattn/vim-goimports'
+Plug 'nametake/golangci-lint-langserver'
 " others
 Plug 'junegunn/fzf', {'do': {-> fzf#install}}
 Plug 'junegunn/fzf.vim'
@@ -103,7 +104,7 @@ nmap <silent> gd :LspDefinition<CR>
 nmap <silent> gh :LspHover<CR>
 let g:lsp_diagnostics_echo_cursor = 1
 let g:asyncomplete_pupup_delay = 200
-let g:lsp_settings_filetype_go = ['gopls']
+let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
 
 let g:lsp_settings = {}
 let g:lsp_settings['gopls'] = {
