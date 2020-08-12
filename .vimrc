@@ -1,8 +1,7 @@
 
 call plug#begin()
 " color theme
-Plug 'nanotech/jellybeans.vim'
-Plug 'rakr/vim-one'
+Plug 'arzg/vim-colors-xcode'
 " golang
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
@@ -82,7 +81,8 @@ if has("persistent_undo")
     set undofile
 endif
 
-colorscheme one
+colorscheme xcodedark
+let g:xcodedark_green_comments = 1
 
 let maplocalleader="\<Space>"
 
