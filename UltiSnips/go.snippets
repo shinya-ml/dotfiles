@@ -1,0 +1,20 @@
+snippet iferr
+if err != nil {${1}}
+endsnippet
+
+snippet main
+package ${1:package}
+
+func main(){${2:}}
+endsnippet
+
+snippet tabletest
+func ${1:testfunction}(t *testing.T){
+	var cases = []struct{
+		input ${2:InputType}
+		output ${2:OutputType}
+	}{}
+
+	for _, tt := range cases {}
+}
+endsnippet

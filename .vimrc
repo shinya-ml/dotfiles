@@ -2,6 +2,7 @@
 call plug#begin()
 " color theme
 Plug 'nanotech/jellybeans.vim'
+Plug 'rakr/vim-one'
 " golang
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
@@ -81,7 +82,7 @@ if has("persistent_undo")
     set undofile
 endif
 
-colorscheme jellybeans
+colorscheme one
 
 let maplocalleader="\<Space>"
 
