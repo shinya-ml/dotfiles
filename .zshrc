@@ -60,3 +60,5 @@ function ranger() {
         exit
     fi
 }
+
+eval "$(gh completion -s zsh)"

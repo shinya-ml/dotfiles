@@ -58,7 +58,7 @@ set softtabstop=0
 set shiftwidth=4
 set smarttab
 
-set relativenumber
+set number
 
 set title
 
