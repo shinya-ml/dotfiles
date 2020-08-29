@@ -10,6 +10,7 @@ Plug 'junegunn/fzf', {'do': {-> fzf#install}}
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'cocopon/vaffle.vim'
+Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
@@ -96,10 +97,11 @@ map <Space>b :Buffer<CR>
 map <Space>f :FZF<CR>
 " easymotion
 map <Leader>s <Plug>(easymotion-bd-f2)
+map <Space>m <Plug>(easymotion-overwin-f2)
 " quick run
 nnoremap <Space>q :QuickRun<CR>
-" Ranger
-nnoremap <Space>v :Vaffle<CR>
+" nerdtree
+nnoremap <Space>v :NERDTreeToggle<CR>
 " lsp
 nmap <silent> gd :LspDefinition<CR>
 nmap <silent> gh :LspHover<CR>
@@ -131,6 +133,8 @@ autocmd! BufNewFile *slide.tex 0r $HOME/dotfiles/template/slide_tex.txt
 autocmd! BufNewFile *paper.tex 0r $HOME/dotfiles/template/paper_tex.txt
 
 autocmd! BufNewFile *diary.md 0r $HOME/dotfiles/template/diary_md.txt
+
+autocmd vimenter * NERDTree
 
 " lang
 autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
