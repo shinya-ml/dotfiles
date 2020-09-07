@@ -79,3 +79,12 @@ snippet overprint
 	\onslide<1> ${1}
 \end{overprint}
 endsnippet
+
+snippet natbib
+\begin{frame}[allowframebreaks]{Reference}
+	\scriptsize
+	% \beamertemplatetextbibitems
+	\bibliographystyle{plainnat}
+	\bibliography{ref.bib}
+\end{frame}
+endsnippet
