@@ -45,7 +45,6 @@ let g:airline_theme='deus'
 let lsp_signature_help_enabled = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 
-
 set noswapfile
 
 filetype plugin indent on
