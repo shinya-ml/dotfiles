@@ -45,6 +45,14 @@ let g:airline_theme='deus'
 let lsp_signature_help_enabled = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 
+if executable('pyls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'pyls',
+        \ 'cmd': {server_info->['pyls']},
+        \ 'whitelist': ['python'],
+        \ })
+endif
+
 set noswapfile
 
 filetype plugin indent on
