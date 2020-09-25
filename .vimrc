@@ -87,6 +87,8 @@ let g:xcodedark_green_comments = 1
 
 let maplocalleader="\<Space>"
 
+let NERDTreeShowHidden=1
+
 noremap <s-h> ^
 noremap <s-l> $
 inoremap <C-j> <esc>
