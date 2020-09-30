@@ -6,7 +6,7 @@ Plug 'arzg/vim-colors-xcode'
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
 " others
-Plug 'junegunn/fzf', {'do': {-> fzf#install}}
+Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'cocopon/vaffle.vim'
