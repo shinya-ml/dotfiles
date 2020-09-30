@@ -1,7 +1,7 @@
 
 call plug#begin()
 " color theme
-Plug 'arzg/vim-colors-xcode'
+Plug 'arcticicestudio/nord-vim'
 " golang
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
@@ -89,7 +89,7 @@ if has("persistent_undo")
     set undofile
 endif
 
-colorscheme xcodedark
+colorscheme nord
 let g:xcodedark_green_comments = 1
 
 let maplocalleader="\<Space>"
