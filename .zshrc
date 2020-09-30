@@ -48,6 +48,7 @@ export SP_TWITTER_ACCESSSECRET=sA3WG81ZgplvvEJ7GuP4dOfglxoaRWLYebhcKOcwFk2hjj
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMAND='ag --hidden --ignore .git -g ""'
 export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :150 {}"'
 export PYENV_ROOT=/usr/local/var/pyenv
 export PATH=$PYENV_ROOT/bin:$PATH

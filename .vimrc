@@ -102,6 +102,7 @@ inoremap <C-j> <esc>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
 " fzf
+let g:fzf_layout={'down': '20%'}
 map <Space>b :Buffer<CR>
 map <Space>f :FZF<CR>
 " easymotion
