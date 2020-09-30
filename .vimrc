@@ -1,7 +1,7 @@
 
 call plug#begin()
 " color theme
-Plug 'arcticicestudio/nord-vim'
+Plug 'kaicataldo/material.vim', {'branch': 'main'}
 " golang
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
@@ -89,7 +89,8 @@ if has("persistent_undo")
     set undofile
 endif
 
-colorscheme nord
+let g:material_theme_style = 'palenight'
+colorscheme material
 let g:xcodedark_green_comments = 1
 
 let maplocalleader="\<Space>"
