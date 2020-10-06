@@ -17,6 +17,7 @@
 \usepackage{amssymb}
 \usepackage{subfig}
 \usepackage{comment}
+\usepackage{mathtools}
 % \mathbb{R}^{l} %表記例
 % \usepackage{algorithm}
 % \usepackage{algorithmicx}

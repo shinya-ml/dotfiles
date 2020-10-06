@@ -17,6 +17,7 @@
     \usepackage{wasysym}
     \usepackage{natbib}
     \usepackage{subfig}
+    \usepackage{mathtools}
     
     % \mathbb{R}^{l} %表記例
     % \usepackage{algorithm}
