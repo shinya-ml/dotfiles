@@ -58,6 +58,6 @@
 
 \maketitle
 
-\bibliography{bibliography}
+\bibliography{ref}
 \bibliographystyle{junsrt}
 \end{document}
