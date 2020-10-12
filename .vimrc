@@ -6,10 +6,7 @@ Plug 'kaicataldo/material.vim', {'branch': 'main'}
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
 " others
-Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
-Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'cocopon/vaffle.vim'
 Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
@@ -102,10 +99,6 @@ noremap <s-l> $
 inoremap <C-j> <esc>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
-" fzf
-let g:fzf_layout={'down': '20%'}
-map <Space>b :Buffer<CR>
-map <Space>f :FZF<CR>
 " easymotion
 map <Leader>s <Plug>(easymotion-bd-f2)
 map <Space>m <Plug>(easymotion-overwin-f2)
