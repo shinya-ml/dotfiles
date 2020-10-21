@@ -2,6 +2,7 @@
 call plug#begin()
 " color theme
 Plug 'kaicataldo/material.vim', {'branch': 'main'}
+Plug 'ghifarit53/tokyonight-vim'
 " golang
 Plug 'mattn/vim-goimports'
 Plug 'nametake/golangci-lint-langserver'
@@ -86,8 +87,12 @@ if has("persistent_undo")
     set undofile
 endif
 
-let g:material_theme_style = 'palenight'
-colorscheme material
+" let g:material_theme_style = 'palenight'
+" colorscheme material
+set termguicolors
+" let g:tokyonight_style='storm'
+let g:tokyonight_disable_italic_comment=1
+colorscheme tokyonight
 let g:xcodedark_green_comments = 1
 
 let maplocalleader="\<Space>"
