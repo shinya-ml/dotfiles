@@ -104,6 +104,7 @@ noremap <s-l> $
 inoremap <C-j> <esc>
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :vert term<CR>
+nnoremap <Space>b :ls<CR>:b<Space>
 " easymotion
 map <Leader>s <Plug>(easymotion-bd-f2)
 map <Space>m <Plug>(easymotion-overwin-f2)
