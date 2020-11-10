@@ -101,6 +101,8 @@ let maplocalleader="\<Space>"
 
 let NERDTreeShowHidden=1
 
+let g:goimports=1
+
 noremap <s-h> ^
 noremap <s-l> $
 inoremap <C-j> <esc>
@@ -115,7 +117,7 @@ nnoremap <Space>q :QuickRun<CR>
 " nerdtree
 nnoremap <Space>v :NERDTreeToggle<CR>
 " lsp
-nmap <silent> gd <Plug>(coc-definition)<CR>
+nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gh :call CocAction('doHover')<CR>
 " let g:lsp_diagnostics_echo_cursor = 1
 " let g:asyncomplete_pupup_delay = 200
