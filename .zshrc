@@ -38,6 +38,7 @@ set -o vi
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Projects
+export GOBIN="$GOPATH/bin"
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export PATH=/usr/local/texlive/2019/bin/x86_64-darwin:$PATH
 
