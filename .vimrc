@@ -1,4 +1,3 @@
-
 call plug#begin()
 " color theme
 Plug 'kaicataldo/material.vim', {'branch': 'main'}
@@ -9,7 +8,7 @@ Plug 'nametake/golangci-lint-langserver'
 " others
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 Plug 'simeji/winresizer'
 Plug 'tomtom/tcomment_vim'
 Plug 'cohama/lexima.vim'
@@ -32,10 +31,10 @@ Plug 'markonm/traces.vim'
 " Plug 'ryanolsonx/vim-lsp-python', {'for' : 'python'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
 let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/dotfiles/UltiSnips']
 let g:tex_flavor="latex"
 " LaTeX Quickrun
-let g:tex_conceal=''
 let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
 let g:vimtex_view_general_options = '@line @pdf @tex'
 let g:vimtex_quickfix_open_on_warning = 0
@@ -43,6 +42,7 @@ let g:airline_theme='deus'
 " lspのhover非表示
 " let lsp_signature_help_enabled = 0
 let g:UltiSnipsExpandTrigger="<tab>"
+
 
 " if executable('pyls')
 "     au User lsp_setup call lsp#register_server({
@@ -53,6 +53,11 @@ let g:UltiSnipsExpandTrigger="<tab>"
 " endif
 
 set noswapfile
+
+if has("conceal")
+    set conceallevel=0
+    let g:tex_conceal=''
+endif
 
 filetype plugin indent on
 if has("autocmd")
@@ -76,7 +81,8 @@ set clipboard=unnamed
 set laststatus=2
 
 set list
-set listchars=tab:>-,trail:-,extends:<,precedes:<
+set listchars=tab:¦_,space:-
+"trail:-,extends:<,precedes:<
 highlight SpecialKey ctermfg=darkmagenta
 
 set autoindent
@@ -154,4 +160,3 @@ autocmd vimenter * NERDTree
 autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType vue setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType javascript setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
-
