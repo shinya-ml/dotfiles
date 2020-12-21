@@ -81,7 +81,7 @@ set clipboard=unnamed
 set laststatus=2
 
 set list
-set listchars=tab:¦_,space:-
+set listchars=tab:>-,space:-
 "trail:-,extends:<,precedes:<
 highlight SpecialKey ctermfg=darkmagenta
 
