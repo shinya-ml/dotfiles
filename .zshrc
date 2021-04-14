@@ -64,3 +64,12 @@ function ranger() {
 }
 
 eval "$(gh completion -s zsh)"
+
+function frepo(){
+    local dir
+    dir=$(ghq list > /dev/null | fzf) &&
+        cd $(ghq root)/$dir
+    zle reset-prompt
+}
+zle -N frepo
+bindkey '^g' frepo

@@ -160,6 +160,8 @@ autocmd! BufNewFile *diary.md 0r $HOME/dotfiles/template/diary_md.txt
 
 autocmd vimenter * NERDTree
 
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
 " lang
 autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType vue setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
