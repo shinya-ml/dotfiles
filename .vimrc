@@ -129,25 +129,6 @@ nnoremap <Space>v :NERDTreeToggle<CR>
 " lsp
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gh :call CocAction('doHover')<CR>
-" let g:lsp_diagnostics_echo_cursor = 1
-" let g:asyncomplete_pupup_delay = 200
-" let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
-
-" let g:lsp_settings = {}
-" let g:lsp_settings['gopls'] = {
-"   \  'workspace_config': {
-"   \    'usePlaceholders': v:true,
-"   \    'analyses': {
-"   \      'fillstruct': v:true,
-"   \    },
-"   \  },
-"   \  'initialization_options': {
-"   \    'usePlaceholders': v:true,
-"   \    'analyses': {
-"   \      'fillstruct': v:true,
-"   \    },
-"   \  },
-"   \}
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
