@@ -33,7 +33,7 @@ Plug 'markonm/traces.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/dotfiles/UltiSnips']
+let g:UltiSnipsSnippetDirectories=['UltiSnips',$HOME.'/ghq/dotfiles/UltiSnips']
 let g:tex_flavor="latex"
 " LaTeX Quickrun
 let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
@@ -147,3 +147,4 @@ autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.org
 autocmd FileType html setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType vue setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType javascript setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd FileType markdown setl tabstop=2 expandtab shiftwidth=2 softtabstop=2

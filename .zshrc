@@ -75,3 +75,4 @@ function frepo(){
 }
 zle -N frepo
 bindkey '^g' frepo
+export PATH="/opt/homebrew/bin:$PATH"
