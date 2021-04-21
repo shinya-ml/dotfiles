@@ -133,6 +133,7 @@ nmap <silent> gh :call CocAction('doHover')<CR>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>""
+
 autocmd! BufNewFile *slide.tex 0r $HOME/dotfiles/template/slide_tex.txt
 
 autocmd! BufNewFile *paper.tex 0r $HOME/dotfiles/template/paper_tex.txt
