@@ -45,6 +45,7 @@ let g:airline_theme='deus'
 let g:UltiSnipsExpandTrigger="<tab>"
 
 
+let g:coc_node_path = '$HOME/.nodebrew/current/bin/node'
 " if executable('pyls')
 "     au User lsp_setup call lsp#register_server({
 "         \ 'name': 'pyls',

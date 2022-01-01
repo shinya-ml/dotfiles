@@ -36,13 +36,19 @@ alias r='ranger'
 alias newslide='cp ~/dotfiles/template/slide_tex.txt slide.tex && touch ./ref.bib'
 alias newpaper='cp ~/dotfiles/template/paper_tex.txt paper.tex && touch ./ref.bib'
 alias mm='vi ~/Library/Mobile\ Documents/com~apple~CloudDocs/memo/memo.md'
+alias avt='aws-vault exec fluct_ssp'
 set -o vi
 
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/Projects
+export GOPATH=$HOME/.goenv
 export GOBIN="$GOPATH/bin"
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+export PATH=$HOME/.goenv/bin:$PATH
+eval "$(goenv init -)"
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export PATH=/usr/local/texlive/2019/bin/x86_64-darwin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export SP_TWITTER_SECRET=GeTlQtGAvIwzbk29DfxXtwtGydkXloBOFhmLLdPgFitn8X0UnI
 export SP_TWITTER_KEY=8AtB4O2omCfAyQNLIZqOZ8C1p
@@ -76,3 +82,10 @@ function frepo(){
 zle -N frepo
 bindkey '^g' frepo
 export PATH="/opt/homebrew/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/shi-suzuki/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/shi-suzuki/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/shi-suzuki/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/shi-suzuki/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/opt/libpq/bin:$PATH"
